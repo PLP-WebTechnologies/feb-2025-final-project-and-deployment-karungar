@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for Sakura Adventure</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <a href="#"><span>SAKURA</span> TOURS</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="itinerary.html">Itinerary</a></li>
+            <li><a href="guides.html">Guides</a></li>
+            <li><a href="register.html">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <!-- Registration Form -->
+    <section id="register" class="registration">
+        <h2><i class="fas fa-edit"></i> Book Your Sakura Adventure</h2>
+        <form id="tourForm">
+            <fieldset>
+                <legend>Traveler Information</legend>
+                <div class="form-group">
+                    <label for="fullName">Full Name*</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="e.g., Yamada Taro" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password*</label>
+                    <input type="password" id="password" name="password" 
+                           placeholder="Create password (min 8 characters)" 
+                           minlength="8" 
+                           pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"
+                           title="Must contain at least one uppercase, one lowercase, and one number"
+                           required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password*</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" 
+                           placeholder="Re-enter your password" 
+                           required>
+                    <small id="passwordError" style="color:red; display:none;">Passwords do not match!</small>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Trip Details</legend>
+                <div class="form-group">
+                    <label for="tourDate">Preferred Dates*</label>
+                    <select id="tourDate" name="tourDate" required>
+                        <option value="" disabled selected>Select week</option>
+                        <option value="mar25">March 25 - April 1</option>
+                        <option value="apr1">April 1 - April 8 (Peak Bloom)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Room Type*</label>
+                    <div class="radio-group">
+                        <input type="radio" id="single" name="room" value="single" required>
+                        <label for="single">Single (+$300)</label>
+                        <input type="radio" id="double" name="room" value="double">
+                        <label for="double">Double</label>
+                        <input type="radio" id="ryokan" name="room" value="ryokan">
+                        <label for="ryokan">Traditional Ryokan (+$200)</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Optional Experiences</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="tea" name="addons" value="tea">
+                        <label for="tea">Kyoto Tea Ceremony ($50)</label>
+                        <input type="checkbox" id="kimono" name="addons" value="kimono">
+                        <label for="kimono">Kimono Rental ($75)</label>
+                        <input type="checkbox" id="bullet" name="addons" value="bullet">
+                        <label for="bullet">Bullet Train Green Car ($120)</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="cta-button"><i class="fas fa-paper-plane"></i> Confirm Booking</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Sakura Tours Japan | <a href="#">Terms</a> | <a href="#">FAQ</a></p>
+        </div>
+    </footer>
+
+    <!-- Add JavaScript at the end for better performance -->
+    <script src="js/script.js"></script>
+</body>
+</html>
