@@ -31,6 +31,9 @@ responsive-multipage-website
 2. Open the `index.html` file in a web browser to view the main landing page.
 3. Navigate through the website using the provided links in the navigation bar.
 
+## Project URL
+You can view the live project here: [Sakura Tours Website](https://your-deployment-url.com)
+
 ## Technologies Used
 - HTML5
 - CSS3
