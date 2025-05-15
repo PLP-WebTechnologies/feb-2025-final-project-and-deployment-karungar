@@ -32,7 +32,7 @@ responsive-multipage-website
 3. Navigate through the website using the provided links in the navigation bar.
 
 ## Project URL
-You can view the live project here: [Sakura Tours Website](https://your-deployment-url.com)
+You can view the live project here: [Sakura Tours Website](https://plp-webtechnologies.github.io/feb-2025-final-project-and-deployment-karungar/)
 
 ## Technologies Used
 - HTML5
